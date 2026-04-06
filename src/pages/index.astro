@@ -15,11 +15,23 @@ const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
 const description =
   "Realizamos eventos ,fiesta de 15 años, Bodas, Promociones, Baby shower, fiestas de Cumpleaños, fiestas infantiles, visítanos y solicita los paquetes de ofertas para que disfrutes y hagas realidad tus momentos inolvidables.";
----
+--- 
 
 <!doctype html>
 <html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
   <head>
+
+    <!-- Google tag (gtag.js) -->
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-76K8FCJQX8"></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-76K8FCJQX8');
+</script>
+
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
