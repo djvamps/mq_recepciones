@@ -1,0 +1,60 @@
+---
+
+---
+
+<section class="bg-#111827 py-6" id="mapa">
+  <div class="mapa-container">
+    <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16 pt-6">
+      <h2
+        class="mb-4 text-4xl tracking-tight bg-gradient-to-l from-purple-600 to-fuchsia-500 bg-clip-text text-transparent font-extrabold"
+      >
+        Ubicanos
+      </h2>
+      <p
+        class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400"
+      >
+        MQ Recepciones y Eventos
+      </p>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3880.8036401884174!2d-76.1595572!3d-13.4244782!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x911017005df269b3%3A0xef6046b57d5115f4!2sMQ%20Recepciones!5e0!3m2!1ses!2spe!4v1762761231938!5m2!1ses!2spe"
+      width="100%"
+      height="100%"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+<style>
+  /* MEDIA QUERY PARA MÓVILES (Max-width: 600px)
+    Esto aplica a pantallas PEQUEÑAS
+  */
+  @media (max-width: 600px) {
+    .mapa-container {
+      /* Altura para móviles */
+      height: 400px;
+
+      /* Oculta desborde horizontal */
+      overflow: hidden;
+    }
+
+    .mapa-container iframe {
+      max-width: 100%;
+    }
+  }
+
+  /* MEDIA QUERY PARA ESCRITORIO (Min-width: 601px)
+    Esto aplica a pantallas GRANDES
+  */
+  @media (min-width: 601px) {
+    .mapa-container {
+      /* Altura para escritorio, evita que el footer desaparezca */
+      height: 600px;
+
+      /* Asegura que no haya desborde inesperado */
+      overflow: hidden;
+    }
+  }
+</style>
